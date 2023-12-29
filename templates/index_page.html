@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<a href="{% url 'index'  %}"> index </a><br>
+<a href="{% url 'parsing' 1 %}"> parsing 1 </a><br>
+<a href="{% url 'parsing' 2 %}"> parsing 2 </a><br>
+<a href="{% url 'parsing' 5 %}"> parsing gecko </a><br>
+<a href="{% url 'parsing' 6 %}"> parsing chrome multi</a><br>
+<a href="{% url 'parsing' 7 %}"> parsing firefox multi </a><br>
+<a href="{% url 'parsing' 8 %}"> miltidriver </a><br>
+<br>
+time = {{ work_time }}
+{#{% for i in data %}#}
+{##}
+{#    {{ i }}<br>#}
+{##}
+{#{% endfor %}#}
+</body>
+</html>

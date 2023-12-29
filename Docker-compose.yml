@@ -1,0 +1,10 @@
+version: '3'
+services:
+  web:
+    image: selenium  # Имя Docker-образа, которое вы собрали с Dockerfile
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/code  # Монтирует текущую директорию внутрь контейнера
+    command: ["python", "manage.py", "runserver", "0.0.0.0:8000"]
+
